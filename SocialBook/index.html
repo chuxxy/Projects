@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/232acb7d33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </a>
+            <ul>
+                <li><img src="images/bell.png"></li>
+                <li><img src="images/message.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/user.jpg">
+            </div>
+        </div>
+
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>            
+            </div>            
+
+            <div class="settings-inner">
+                <div class="user-profile">
+                    <img src="images/user.jpg">
+                    <div>
+                        <p>John Doe</p>
+                        <a href="profile.html">View Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" class="feedback">
+                    <div>
+                        <p>Feedback</p>
+                        <a href="#">Help us improve</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="20px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="20px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="20px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="20px" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png">Feeds</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/groups.png">Groups</a>
+                <a href="#"><img src="images/marketplace.png">Marketplace</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/web-design.jpg">Web Design</a>
+                <a href="#"><img src="images/graphic-designer.jpg">Graphic Design</a>
+                <a href="#"><img src="images/stack.jpg">Full-Stack Developer</a>
+                <a href="#"><img src="images/course.jpg">Web Design Courses</a>
+            </div>
+        </div>
+        <div class="main-content">
+
+            <div class="stories">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="images/member2.jpg">
+                    <p>David Mafany</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="images/member3.jpg">
+                    <p>Ifeanyi Nwali</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="images/member1.jpg">
+                    <p>Chuka Onwuka</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="images/pic1.jpg">
+                    <p>Chuka Onwuka</p>
+                </div>
+            </div>
+            
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/user.jpg">
+                    <div>
+                        <p>John Doe</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">Photos</a>
+                        <a href="#"><img src="images/feeling.png">Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/user.jpg">
+                        <div>
+                            <p>John Doe</p>
+                            <small>June 1 2023, 9:58am</small>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                
+                <p class="post-text">Subscribe <span>@echo developers</span> on youtube to watch more videos on web development and graphic design. <a href="#">#EchoDevelopers</a>
+                    <a href="#">#YoutubeChannel</a></p>
+                <img src="images/feed3.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 120</div>
+                        <div><img src="images/chat.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile.jfif"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="" alt=""></div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/user.jpg">
+                        <div>
+                            <p>Michael Ross</p>
+                            <small>June 1 2023, 9:58am</small>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                
+                <p class="post-text">Subscribe <span>@echo developers</span> on youtube to see our latest Pizza Recipe. <a href="#">#EchoDevelopers</a>
+                    <a href="#">#YoutubeChannel</a></p>
+                <img src="images/feed2.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 120</div>
+                        <div><img src="images/chat.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile.jfif"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="" alt=""></div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/user.jpg">
+                        <div>
+                            <p>David Mafany</p>
+                            <small>June 1 2023, 9:58am</small>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                
+                <p class="post-text">Subscribe <span>@echo developers</span> on youtube to watch more videos on web development and graphic design. <a href="#">#EchoDevelopers</a>
+                    <a href="#">#YoutubeChannel</a></p>
+                <img src="images/feed1.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 120</div>
+                        <div><img src="images/chat.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile.jfif"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="" alt=""></div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load">Load More</button>
+
+        </div>
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>11</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Courtesy Visit</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> ICTC, Rivers State University</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>29</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Semester Exams</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> ICTC, Rivers State University</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisements</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/ads.jpg" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversations</h4>
+                <a href="#">Hide Chats</a>
+            </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member1.jpg">
+                    </div>
+                    <p>David Mafany</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member2.jpg">
+                    </div>
+                    <p>Ifeanyi Nwali</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/member3.jpg">
+                    </div>
+                    <p>Chuka Onwuka</p>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2023 - Onwuka Chuka</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
